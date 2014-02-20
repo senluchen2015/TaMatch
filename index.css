@@ -1,7 +1,9 @@
 .header{
 	position: relative;
 	height:10%;
-	background: blue;
+	background: white;
+	border-style: dashed;
+	border-width: 1px;
 }
 
 body{
