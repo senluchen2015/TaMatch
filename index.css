@@ -1,12 +1,9 @@
-.header{
+.header {
 	position: relative;
 	height:10%;
-	background: white;
-	border-style: dashed;
-	border-width: 1px;
+	border: 1px solid black;
 }
 
-body{
-
+.logo {
+	height: 100%;
 }
-
