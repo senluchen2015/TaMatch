@@ -4,6 +4,61 @@
 	border: 1px solid black;
 }
 
-.logo {
+.logo{
 	height: 100%;
 }
+
+.login{
+	position: relative;
+	width:50%;
+	float:left;
+}
+
+.newsFeed{
+	position: relative;
+	width:50%;
+	float:right;
+}
+
+.announcement{
+	position:relative;
+	height:15%;
+	width:75%;
+	margin-right:25%;
+	margin-top:10%;
+	border: 1px solid black;
+}
+
+.news{
+	position:relative;
+	height:15%;
+	width:75%;
+	margin-right:25%;
+	margin-top:10%;
+	border: 1px solid black;
+}
+
+.loginButton{
+	position:relative;
+	height:15%;
+	width:50%;
+	margin-left:25%;
+	margin-right:25%;
+	margin-top:10%;
+	/*text*/
+	font-size: 200%;
+}
+
+.registerButton{
+	position:relative;
+	height:15%;
+	width:50%;
+	margin-left:25%;
+	margin-right:25%;
+	margin-top:10%;
+	/*text*/
+	font-size: 200%;
+}
+
+
+
