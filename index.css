@@ -1,4 +1,10 @@
-.body{
+.header{
+	position: relative;
+	height:10%;
+	background: blue;
+}
+
+body{
 
 }
 
