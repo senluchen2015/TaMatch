@@ -2,6 +2,13 @@
 	<head>
 		<link rel='shortcut icon' href='images/lobby_lobstah.png'/>
 		<link rel='stylesheet' href='index.css'/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js">
+		</script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js">
+		</script>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+		<script src="index.js"></script>
+
 		<title>TaMatch</title>
 	<head>
 	<body>
@@ -9,11 +16,33 @@
 			<img class='logo' src='images/logo.png'>
 		</div>
 
+		<div id="loginForm" title="Log In">
+		 <form>
+		  <fieldset>
+		    <label for="email">Email</label>
+		    <input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all">
+		    <label for="password">Password</label>
+		    <input type="password" name="password" id="password" value="" class="text ui-widget-content ui-corner-all">
+		  </fieldset>
+		  </form>
+		</div>
+
+		<div id="registerForm" title="Register">
+		 	<button type="button" class="registerButton" id="studentButton">
+		 		Student
+		 	</button>
+		 	<button type="button" class="registerButton" id="instructorButton">
+		 		Instructor
+		 	</button>
+		</div>
+
+
+
 		<div class="login">
-			<button type="button" class="loginButton">
+			<button type="button" class="loginButton" id="loginButton">
 				Login
 			</button>
-			<button type="button" class="registerButton">
+			<button type="button" class="registerButton" id="registerButton">
 				Register
 			</button>
 		</div>
