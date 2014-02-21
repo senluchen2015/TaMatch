@@ -1,7 +1,6 @@
 /* Javascript Here */
 
 $(function(){
-
 	$("#loginForm").dialog({
 		autoOpen: false,
 		height: 350,
@@ -32,7 +31,13 @@ $(function(){
 		.click(function(){
 			$("#registerForm").dialog("open");
 			$('.ui-widget-overlay').css('background', 'grey');
+
 		});
+
+	$("#studentButton")
+		.click(function(){
+			window.location.replace("studentreg.html");
+		})
 
 });
 
