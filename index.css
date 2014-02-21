@@ -9,7 +9,9 @@
 }
 
 .logo {
+	position: relative;
 	height: 100%;
+	left: 1%;
 }
 
 .nupic {
