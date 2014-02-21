@@ -1,6 +1,6 @@
 .header {
 	position: relative;
-	height:15%;
+	height:10%;
 	border: 2px solid black;
 	background-color: #FF7922;
 	margin-top: -10px;
@@ -66,9 +66,5 @@
 	margin-top:10%;
 	/*text*/
 	font-size: 200%;
-}
-
-
-#loginForm{
 }
 

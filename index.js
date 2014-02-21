@@ -32,7 +32,13 @@ $(function(){
 		.click(function(){
 			$("#registerForm").dialog("open");
 			$('.ui-widget-overlay').css('background', 'grey');
+
 		});
+
+	$("#studentButton")
+		.click(function(){
+			window.location.replace("studentreg.html");
+		})
 
 });
 
