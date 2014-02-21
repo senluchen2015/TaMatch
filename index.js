@@ -18,6 +18,7 @@ $(function(){
 	$("#loginButton")	
 		.click(function(){
 		$("#loginForm").dialog("open");
+		$('.ui-widget-overlay').css('background', 'grey');
 		});
 
 	$("#registerForm").dialog({
@@ -30,6 +31,7 @@ $(function(){
 	$("#registerButton")
 		.click(function(){
 			$("#registerForm").dialog("open");
+			$('.ui-widget-overlay').css('background', 'grey');
 		});
 
 });
