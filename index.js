@@ -1,7 +1,6 @@
 /* Javascript Here */
 
 $(function(){
-
 	$("#loginForm").dialog({
 		autoOpen: false,
 		height: 350,

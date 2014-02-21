@@ -1,0 +1,17 @@
+.topButtonRow{
+	position: absolute;
+	padding-top:1%;
+	height:10%;
+}
+
+button{
+	height:90%;
+}
+
+.notification{
+	width:20em;
+}
+
+.myProfile{
+	width:20em;
+}
