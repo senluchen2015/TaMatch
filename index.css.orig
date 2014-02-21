@@ -1,5 +1,5 @@
-
 .header {
+<<<<<<< HEAD
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -11,6 +11,15 @@
 
 .logo {
 	height: 100%;
+=======
+	position: relative;
+	height:20%;
+	border: 2px solid black;
+	background-color: #FF7922;
+	margin-top: -10px;
+	margin-left: -10px;
+	width: 110%;
+>>>>>>> 96f019d37c15716f3f0b32c8ec8e02cd6f63a03f
 }
 
 .nupic {
