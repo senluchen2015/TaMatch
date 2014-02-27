@@ -36,7 +36,7 @@ $(function(){
 
 	$("#studentButton")
 		.click(function(){
-			window.location.replace("studentreg.html");
+			window.location.href = "studentreg.html";
 		})
 
 });
