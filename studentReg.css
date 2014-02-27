@@ -1,3 +1,13 @@
 .title {
 	text-indent: 10px;
 }
+.leftForm {
+	position: relative;
+	left: 10px;
+	width: 50%
+}
+.rightForm {
+	position: relative;
+	left: 10px;
+	width: 50%
+}
