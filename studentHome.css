@@ -2,6 +2,7 @@
 	display:block;
 	position: relative;
 	width:100%;
+	top: 1%;
 	height:10%;
 }
 
@@ -10,28 +11,58 @@ button{
 }
 
 .notification{
-	width:20em;
+	width:25%;
+	float:left;
+	margin-left:10%;
 }
 
 .myProfile{
-	width:20em;
-	margin-left:40%;
+	width:25%;
+	float:right;
+	margin-right: 10%;
 }
 
 .mainSection{
 	position: relative;
-	height:80%;
+	top: 2%;
+	height:75%;
 	width: 100%;
 }
 
+
 .topText{
-	background:rgba(64, 224, 208, 0.4);
+	background:#93B1C6;
+}
+
+.departments{
+	position: relative;
+	width:100%;
 }
 
 .courseBox{
 	position:relative;
-	width:30%;
+	height: 77%;
+	width:40%;
+	float: left;
 	left:10%;
 	color:black;
 	border:2px solid black;
+}
+
+
+.rightSection{
+	position: relative;
+	height: 77%;
+	width:30%;
+	float: right;
+	right:10%;
+	border:2px solid black;
+}
+
+.favorite{
+	height:50%;
+}
+
+.openApplication{
+	height:50%;
 }

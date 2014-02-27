@@ -10,6 +10,7 @@
 		</script>
 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 		<script src="index.js"></script>
+		<script src="studentHome.js"></script>
 
 		<title>TaMatch</title>
 	<head>
@@ -23,12 +24,12 @@
 			<button class="myProfile" id="myProfile">myProfile</button>
 		</div>
 
+		<div class="mainSection">
 			<div class="courseBox">
-			<div class="mainSection">
 					<div class="topText">
-						Search Listings
+						Search Listings<br><br>
 					</div>
-					<select style="width:194px;">
+					<select class="departments" id="departments" onclick="displaySelected();">
 						<option value="" selected="selected">&nbsp; </option>
 						<option value="ACCOUNT">ACCOUNT - Accounting</option>
 						<option value="ACCT">ACCT - Accounting &amp; Info Systems</option>
@@ -248,14 +249,21 @@
 						<option value="WRITING">WRITING - Writing Arts</option>
 						<option value="YIDDISH">YIDDISH - Yiddish</option>
 					</select>
-				<div class=>
-
-
+					<div class="courseTable" id="courseTable">
+					</div>
 			</div>
-
-
+			<div class="rightSection">
+				<div class="favorite">
+					<div class="topText">
+						Favorite<br><br>
+					</div>
+				</div>
+				<div class="openApplication">
+					<div class="topText">
+						Open Application<br><br>
+					</div>
+				</div>
+			</div>
 		</div>
-
-
 	</body>
 </html>
