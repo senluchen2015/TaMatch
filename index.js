@@ -36,7 +36,13 @@ $(function(){
 
 	$("#studentButton")
 		.click(function(){
-			window.location.href = "studentreg.html";
+			window.location.href = "studentReg.html";
+		})
+
+
+	$("#instructorButton")
+		.click(function(){
+			window.location.href = "instructorReg.html";
 		})
 
 });

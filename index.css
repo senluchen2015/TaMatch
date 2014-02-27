@@ -1,6 +1,9 @@
+body {
+	margin:0;
+}
 
 .header {
-	position: absolute;
+	position: relative;
 	top: 0px;
 	left: 0px;
 	height: 12%;
