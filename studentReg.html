@@ -14,13 +14,32 @@
 	<body>
 		<div class='header'>
 			<a href="index.html">
-				<img class='logo' src='images/logo.png'>
+				<img class='logo' src='images/logoRed.png'>
 			</a>
 		</div>
 		<div class='title'>
 			<h1> Student Registration </h1>
 		</div>
-		<div class='form'>
-			<form>
-				First name
+		<div style="width: 100%;">
+			<div class='leftForm' style="float:left; width: 50%">
+				<form>
+					First Name<br>
+					<input type="text" name="firstname"><br>
+					Last Name<br>
+					<input type="text" name="lastname"><br>
+					E-mail Address<br>
+					<input type="text" name="email"><br>
+					Password<br>
+					<input type="text" name="password"><br>
+					Confirm Password<br>
+					<input type="text" name="cpassword"><br>
+				</form>
+			</div>
+			<div class='rightForm' style="float:right; width: 50%">
+				<form name="folderForm">
+					Resume<br>
+					<input type=file name="file">
+<!-- 					<input onclick="javascript:GetFolder();">
+ -->				</form>
+			</div>
 </html>
