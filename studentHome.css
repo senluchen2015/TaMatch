@@ -1,7 +1,8 @@
 .topButtonRow{
 	position: absolute;
-	padding-top:1%;
+	width:100%;
 	height:10%;
+	top:60;
 }
 
 button{
@@ -14,4 +15,9 @@ button{
 
 .myProfile{
 	width:20em;
+	margin-left:40%;
+}
+
+.mainSection{
+	height:80%;
 }
