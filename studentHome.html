@@ -16,13 +16,16 @@
 	<head>
 	<body>
 		<div class='header'>
-			<img class='logo' src='images/logo.png'>
+			<img class='logo'src='images/logo.png'>
 		</div>
 
 		<div class="topButtonRow">
-			<button class="notification" id="notification">Notification</button>
-			<button class="myProfile" id="myProfile">myProfile</button>
-		</div>
+			<div class="notificationWrapper">
+				<button class="notification" id="notification" onclick="openNotification()">Notification</button>
+				<div class="notificationList" id="notificationList"></div>
+			</div>
+				<button class="myProfile" id="myProfile">myProfile</button>
+			</div>
 
 		<div class="mainSection">
 			<div class="courseBox">

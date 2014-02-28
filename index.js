@@ -8,6 +8,7 @@ $(function(){
 		modal: true,
 		buttons: {
 			"Login": function(){
+				window.location.href="studentHome.html";
 			},
 			"Cancel": function(){
 				$(this).dialog("close");
@@ -44,6 +45,8 @@ $(function(){
 		.click(function(){
 			window.location.href = "instructorReg.html";
 		})
+
+	
 
 });
 
