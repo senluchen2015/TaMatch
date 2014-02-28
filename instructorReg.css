@@ -1,5 +1,5 @@
 input {
-	width:20%;
+	width:40%;
 }
 .title {
 	text-indent: 20px;
@@ -7,6 +7,7 @@ input {
 .forms {
 	position: relative;
 	font-size: 130%;
+	width: 50%;
 }
 .left {
     width: 10%;
