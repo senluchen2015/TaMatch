@@ -26,11 +26,13 @@ button{
 	top: 2%;
 	height:75%;
 	width: 100%;
+	font-size: 20px;
+	color: #432F21;
+	font-weight: bold;
 }
 
 
 .topText{
-	background:#93B1C6;
 }
 
 .departments{
@@ -44,8 +46,7 @@ button{
 	width:40%;
 	float: left;
 	left:10%;
-	color:black;
-	border:2px solid black;
+	/*border:2px solid black;*/
 }
 
 .coursesHome{
@@ -59,21 +60,23 @@ button{
 	width:30%;
 	float: right;
 	right:10%;
-	border:2px solid black;
+
+	/*border:2px solid black;*/
 }
 
 .favorite{
 	height:50%;
 }
 
-.openApplication{
+.openApplication
 	height:50%;
+
 }
 
 
 #notificationList{
 	position: relative;
-	
+
 }
 
 .notificationWrapper{
@@ -81,4 +84,32 @@ button{
 	width: 40%;
 	left:10%;
 	float: left;
+}
+
+.coursesHomeOdd{
+	background: #CDCAB9;
+	font-weight: normal;
+}
+
+.coursesHomeEven{
+	font-weight: normal;
+}
+
+.logOut{	
+    position: relative;
+    width: 10%;
+    float: right;
+    color:  #FFE1B9;
+    text-align: right;
+    margin-right: 1%;
+
+}
+
+.logOut:hover{
+	position: relative;
+    width: 10%;
+    float: right;
+    color:  #FFE1B9;
+    font-weight: bold;
+
 }
