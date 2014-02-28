@@ -1,13 +1,28 @@
+input {
+	width:20%;
+}
 .title {
-	text-indent: 10px;
+	text-indent: 20px;
 }
-.leftForm {
+.forms {
 	position: relative;
-	left: 10px;
-	width: 50%
+	font-size: 130%;
 }
-.rightForm {
-	position: relative;
-	left: 10px;
-	width: 50%
+.left {
+    width: 10%;
+    float: left;
+    text-align: right;
+}
+.right {
+    width: 80%;
+    margin-left: 10px;
+    float:left;
+}
+.submit {
+	height: 5%;
+	width: 20%
+}
+.return{
+	vertical-align: bottom;
+	margin-left: 10px;
 }

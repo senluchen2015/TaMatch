@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<link rel='shortcut icon' href='images/lobby_lobstah.png'/>
+		<link rel='shortcut icon' href='images/TC.png'/>
 		<link rel='stylesheet' href='index.css'/>
 		<link rel='stylesheet' href="studentReg.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js">
@@ -8,7 +8,7 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js">
 		</script>
 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
-		<script src="studentreg.js"></script>
+		<script src="studentReg.js"></script>
 		<title>TA Match Student Registration</title>
 	</head>
 	<body>
@@ -20,27 +20,53 @@
 		<div class='title'>
 			<h1> Student Registration </h1>
 		</div>
-		<div style="width: 100%;">
-			<div class='leftForm' style="float:left; width: 50%">
-				<form>
-					First Name<br>
-					<input type="text" name="firstname"><br><br>
-					Last Name<br>
-					<input type="text" name="lastname"><br><br>
-					E-mail Address<br>
-					<input type="text" name="email"><br><br>
-					Password<br>
-					<input type="password" name="password"><br><br>
-					Confirm Password<br>
-					<input type="password" name="cpassword"><br><br>
-				</form>
+		<div class = 'forms'>
+			<div class ='left'>
+				First Name
 			</div>
-			<div class='rightForm' style="float:right; width: 50%">
-				<form name="folderForm">
-					Upload Resume<br>
-					<input type=file name="file">
-				</form>
-				School<br>
+			<div class='right'>
+				<input type="text" name="firstname">
+			</div>
+			<div class ='left'>
+				Last Name
+			</div>
+			<div class='right'>
+				<input type="text" name="lastname">
+			</div>
+
+			<div class ='left'>
+				E-mail Address
+			</div>
+			<div class='right'>
+				<input type="text" name="email">
+			</div>		
+
+
+			<div class ='left'>
+				Password
+			</div>
+			<div class='right'>
+				<input type="password" name="password">
+			</div>	
+
+			<div class ='left'>
+				Confirm Password
+			</div>
+			<div class='right'>
+				<input type="password" name="cpassword">
+			</div>	
+
+			<div class ='left'>
+				Upload Resume
+			</div>
+			<div class='right'>
+				<input type=file name="file">
+			</div>	
+
+			<div class ='left'>
+				School
+			</div>
+			<div class='right'>
 				<select name="school">
 					<option value="">&nbsp; </option>
 					<option value="SPCG">Communication Grad</option>
@@ -52,7 +78,7 @@
 					<option value="JRNG">Journalism Grad</option>
 					<option value="EMP">Kellogg Executive Masters Prog</option>
 					<option value="LAW">Law</option>
-					<option value="ENGG">McCormick Engg Grad</option>
+					<option value="ENGG">McCormick Eng Grad</option>
 					<option value="MUSG">Music Grad</option>
 					<option value="NDGR">Non-Degree</option>
 					<option value="PT">Physical Therapy</option>
@@ -60,8 +86,13 @@
 					<option value="QUGR">Qatar Undergraduate</option>
 					<option value="TGS">The Graduate School</option>
 					<option value="UGRD">Undergraduate</option>
-				</select><br><br>
-				Year<br>
+				</select>
+			</div>	
+
+			<div class ='left'>
+				Year
+			</div>
+			<div class='right'>
 				<select name="school">
 					<option value="">&nbsp; </option>
 					<option value="Freshman">Freshman</option>
@@ -70,8 +101,13 @@
 					<option value="Senior">Senior</option>
 					<option value="Masters">Masters</option>
 					<option value="PhD Candidate">PhD Candidate</option>
-				</select><br><br>
-				Major<br>
+				</select>
+			</div>	
+
+			<div class ='left'>
+				Major
+			</div>
+			<div class='right'>
 				<select name="major">
 					<option>&nbsp; </option>
 					<option>African American Studies</option>
@@ -196,7 +232,9 @@
 					<option>Voice and Opera Performance</option>
 					<option>Wind and Percussion Performance</option>
 					<option>Writing Program</option>
-				</select> <br><br>
-				<button type="button" class="submit" id="submit">Submit</button>
+				</select><br><br>
+					<button type="button" class="submit" id="submit">Submit</button>
+					<a href ="index.html" class ="return">Go Back</a>
 			</div>
+		</div>
 </html>

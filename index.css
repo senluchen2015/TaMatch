@@ -1,7 +1,12 @@
 body {
 	margin:0;
 	background-color: #DFDED4;
-	width: 99%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.no-close .ui-dialog-titlebar-close {
+  display: none;
 }
 
 .header {
@@ -80,8 +85,13 @@ body {
 	margin-top:10%;
 	/*text*/
 	font-size: 200%;
+
 }
 
+#studentButton, #instructorButton{
+	position:relative;
+	height:30%;
+	width: 50%;
 
 #loginForm{
 }
