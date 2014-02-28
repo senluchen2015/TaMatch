@@ -2,7 +2,8 @@ body {
 	margin:0;
 	background-color: #DFDED4;
 	width: 100%;
-	overflow: hidden;
+    overflow: hidden;
+
 }
 
 .no-close .ui-dialog-titlebar-close {
@@ -92,6 +93,7 @@ body {
 	position:relative;
 	height:30%;
 	width: 50%;
+}
 
 #loginForm{
 }
