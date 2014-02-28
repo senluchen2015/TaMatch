@@ -8,6 +8,7 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js">
 		</script>
 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+		<script src="instructorReg.js"></script>
 		<title>TA Match Instructor Registration</title>
 	</head>
 	<body>
@@ -19,23 +20,46 @@
 		<div class='title'>
 			<h1> Instructor Registration </h1>
 		</div>
-		<div style="width: 100%;">
-			<div class='leftForm' style="float:left; width: 50%">
-				<form>
-					First Name<br>
-					<input type="text" name="firstname"><br><br>
-					Last Name<br>
-					<input type="text" name="lastname"><br><br>
-					E-mail Address<br>
-					<input type="text" name="email"><br><br>
-					Password<br>
-					<input type="password" name="password"><br><br>
-					Confirm Password<br>
-					<input type="password" name="cpassword"><br><br>
-				</form>
+		<div class = 'forms'>
+			<div class ='left'>
+				First Name
 			</div>
-			<div class='rightForm' style="float:right; width: 50%">
-				School<br>
+			<div class='right'>
+				<input type="text" name="firstname">
+			</div>
+			<div class ='left'>
+				Last Name
+			</div>
+			<div class='right'>
+				<input type="text" name="lastname">
+			</div>
+
+			<div class ='left'>
+				E-mail Address
+			</div>
+			<div class='right'>
+				<input type="text" name="email">
+			</div>		
+
+
+			<div class ='left'>
+				Password
+			</div>
+			<div class='right'>
+				<input type="password" name="password">
+			</div>	
+
+			<div class ='left'>
+				Confirm Password
+			</div>
+			<div class='right'>
+				<input type="password" name="cpassword">
+			</div>	
+
+			<div class ='left'>
+				School
+			</div>
+			<div class='right'>
 				<select name="school">
 					<option value="">&nbsp; </option>
 					<option value="SPCG">Communication Grad</option>
@@ -47,7 +71,7 @@
 					<option value="JRNG">Journalism Grad</option>
 					<option value="EMP">Kellogg Executive Masters Prog</option>
 					<option value="LAW">Law</option>
-					<option value="ENGG">McCormick Engg Grad</option>
+					<option value="ENGG">McCormick Eng Grad</option>
 					<option value="MUSG">Music Grad</option>
 					<option value="NDGR">Non-Degree</option>
 					<option value="PT">Physical Therapy</option>
@@ -55,8 +79,13 @@
 					<option value="QUGR">Qatar Undergraduate</option>
 					<option value="TGS">The Graduate School</option>
 					<option value="UGRD">Undergraduate</option>
-				</select><br><br>
-				Department<br>
+				</select>
+			</div>
+
+			<div class ='left'>
+				Department
+			</div>
+			<div class='right'>
 				<select name="department">
 					<option>&nbsp; </option>
 					<option value="ACCOUNT">ACCOUNT - Accounting</option>
@@ -276,7 +305,9 @@
 					<option value="WIND_PER">WIND_PER - Wind &amp; Percussion</option>
 					<option value="WRITING">WRITING - Writing Arts</option>
 					<option value="YIDDISH">YIDDISH - Yiddish</option>
-				</select> <br><br>
-				<button>Submit</button>
+				</select><br><br>
+				<button type="button" class="submit" id="submit">Submit</button>
+				<a href ="index.html" class ="return">Go Back</a>
 			</div>
+		</div>
 </html>

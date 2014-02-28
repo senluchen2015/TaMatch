@@ -1,6 +1,6 @@
 $(function(){
 	$("#submit")
 		.click(function(){
-			window.location.href = "studentHome.html";
+			window.location.href = "instructorHome.html";
 		})
 });

@@ -6,6 +6,10 @@ body {
 
 }
 
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
 .header {
 	position: relative;
 	height: 12%;
@@ -82,8 +86,14 @@ body {
 	margin-top:10%;
 	/*text*/
 	font-size: 200%;
+
 }
 
+#studentButton, #instructorButton{
+	position:relative;
+	height:30%;
+	width: 50%;
+}
 
 #loginForm{
 }

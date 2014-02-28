@@ -7,6 +7,7 @@ $(function(){
 		width: 300,
 		modal: true,
 		draggable: false,
+		dialogClass: "no-close",
 		buttons: {
 			"Login": function(){
 				window.location.href="studentHome.html";
@@ -24,10 +25,16 @@ $(function(){
 
 	$("#registerForm").dialog({
 		autoOpen: false,
-		height: 350,
-		width: 300,
+		height: 600,
+		width: 500,
 		modal: true,
 		draggable: false,
+		dialogClass: "no-close",
+		buttons: {
+			"Cancel": function(){
+				$(this).dialog("close");
+			}
+		}
 	});
 
 	$("#registerButton")
