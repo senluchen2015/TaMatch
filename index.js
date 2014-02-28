@@ -6,6 +6,7 @@ $(function(){
 		height: 350,
 		width: 300,
 		modal: true,
+		draggable: false,
 		buttons: {
 			"Login": function(){
 				window.location.href="studentHome.html";
@@ -25,7 +26,8 @@ $(function(){
 		autoOpen: false,
 		height: 350,
 		width: 300,
-		modal: true
+		modal: true,
+		draggable: false,
 	});
 
 	$("#registerButton")
