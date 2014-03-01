@@ -27,7 +27,7 @@ button {
 .formContainer {
 	position: relative;
 	width: 60%;
-	overflow: scroll;
+	overflow: hidden;
 }
 
 .inputNames {
