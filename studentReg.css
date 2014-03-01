@@ -13,13 +13,6 @@ select {
 	font-size: 18;
 }
 
-button {
-	position: relative;
-	margin-top: 5px;
-	margin-left: 10%;
-	left: 20%;
-}
-
 .title {
 	text-indent: 20px;
 }
@@ -56,6 +49,11 @@ p.name {
 }
 
 .fsSubmitButton {
+	position: relative;
+	margin-top: 5px;
+	margin-left: 10%;
+	left: 15%;
+
 	padding: 10px 15px 11px !important;
 	font-size: 18px !important;
 	background-color: #57d6c7;
@@ -73,6 +71,10 @@ p.name {
 }
 
 .fsCancelButton {
+	margin-top: 5px;
+	margin-left: 10%;
+	float: right;
+
 	border-top:	2px solid #a3ceda;
 	border-left: 2px solid #a3ceda;
 	border-right: 2px solid #4f6267;
@@ -83,25 +85,3 @@ p.name {
 	font-weight: bold;
 	color: #2d525d;
 }
-
-/*.left {
-    width: 35%;
-    float: left;
-    text-align: right;
-}
-
-.right {
-    width: 60%;
-    margin-left: 10px;
-    float:right;
-}*/
-
-/*.submit {
-	height: 5%;
-	width: 20%
-}
-
-.return{
-	vertical-align: bottom;
-	margin-left: 10px;
-}*/
