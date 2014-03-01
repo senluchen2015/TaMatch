@@ -3,11 +3,12 @@ $(function(){
 		.click(function(){
 			window.location.href = "studentHome.html";
 		})
-});
-
-$(function(){
 	$("#cancel")
 		.click(function(){
 			window.location.href = "index.html";
+		})
+	$("#add")
+		.click(function(){
+			$.pageslide({ direction: 'left', href: 'courseHistory.html'})
 		})
 });
