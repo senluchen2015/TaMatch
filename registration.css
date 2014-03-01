@@ -16,7 +16,6 @@ select {
 .formContainer {
 	position: relative;
 	width: 60%;
-	overflow: hidden;
 }
 
 .inputNames {

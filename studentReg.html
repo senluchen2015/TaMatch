@@ -2,11 +2,12 @@
 	<head>
 		<link rel='shortcut icon' href='images/TC.png'/>
 		<link rel='stylesheet' href='index.css'/>
-		<link rel='stylesheet' href="registration.css">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js">
-		</script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js">
-		</script>
+		<link rel='stylesheet' href="registration.css"/>
+		<pre><code><link rel='stylesheet' href="srobbin-jquery/jquery.pageslide.css"/></code></pre>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<script src="srobbin-jquery/jquery.pageslide.js"></script>
+		<script src="srobbin-jquery/jquery.pageslide.min.js"></script>
 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 		<script src="studentReg.js"></script>
 		<title>TA Match Student Registration</title>
@@ -65,6 +66,11 @@
 				<div class='itemContainer'>
 					<p class = 'name'>
 						Major
+					</p>
+				</div>
+				<div class='itemContainer'>
+					<p class = 'name'>
+						Course History
 					</p>
 				</div>
 				<div class='itemContainer'>
@@ -251,6 +257,9 @@
 						<option>Wind and Percussion Performance</option>
 						<option>Writing Program</option>
 					</select>
+				</div>				
+				<div class='itemContainer'>
+					<a href="javascript:$.pageslide({ direction: 'left', href: 'courseHistory.html' })">Open the page programatically.</a>
 				</div>
 				<div class='itemContainer'>
 					<button class='fsSubmitButton' id='submit'>
