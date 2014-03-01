@@ -1,1 +1,40 @@
-.button
+.postingContainer {
+	position: relative;
+	margin-left: 20px;
+	height: 500px;
+	width: 600px;
+	background-color: white;
+}
+
+.postingTitleBar {
+	height: 10%;
+	background-color: grey;
+}
+
+.postingList {
+	position: relative;
+	margin-left: 2.5%;
+	margin-top: 2%;
+	height: 85%;
+	width: 95%;
+	background-color: aqua;
+}
+
+p.postingBarTitle {
+	position: absolute;
+	margin-top: 15px;
+	left: 10px;
+
+	font-size: 20;
+	font-weight: bold;
+	color: black;
+}
+
+button.newPostButton {
+	position: relative;
+	float: right;
+	top: 7px;
+	right: 3%;
+	height: 70%;
+	font-size: 16;
+}
