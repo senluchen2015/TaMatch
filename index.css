@@ -1,7 +1,7 @@
 body {
 	margin:0;
 	background-color: #DFDED4;
-	
+
 	width: 100%;
     font-family: sans-serif;
 }
@@ -16,6 +16,10 @@ body {
 	width: 100%;
 	border-bottom: 2px solid black;
 	background-color: #93B1C6;
+}
+
+.title {
+	text-indent: 20px;
 }
 
 .logo {
