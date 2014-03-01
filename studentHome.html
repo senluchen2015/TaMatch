@@ -9,29 +9,46 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js">
 		</script>
 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+
 		<script src="index.js"></script>
 		<script src="studentHome.js"></script>
 		<title>TaMatch</title>
 	<head>
 	<body>
 		<div class='header'>
-			<a href="index.html">
+			<a href="studentHome.html">
 				<img class='logo'src='images/logoRed.png'>
 			</a>
-			<a href="index.html">
-				<div class="logOut">
-				Log out 
+				
+				<div class="notificationWrapper">
+					<button class="notification" id="notification">Notification</button>
+					<div class="notificationList" id="notificationList">
+						<ul>
+							<li>You've been accepted to EECS 330</li>
+							<li>Professor Horn messaged you </li>
+						</ul> 	
+					</div>
 				</div>
-			</a>
+
+				<div class="logOut">
+					<div class="logOutText">
+							<a href="index.html">Log out<br></a>
+					</div>
+					<div class="profile">
+						<a href="myProfile.html">My Profile</a>
+					</div>
+
+				</div>
 		</div>
 
 		<div class="topButtonRow">
-			<div class="notificationWrapper">
+			<!-- <div class="notificationWrapper">
 				<button class="notification" id="notification" onclick="openNotification()">Notification</button>
 				<div class="notificationList" id="notificationList"></div>
+			</div> -->
+			<!-- 	<button class="myProfile" id="myProfile">myProfile</button> -->
 			</div>
-				<button class="myProfile" id="myProfile">myProfile</button>
-			</div>
+
 
 		<div class="mainSection">
 			<div class="courseBox">

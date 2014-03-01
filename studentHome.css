@@ -10,10 +10,6 @@ button{
 	height:90%;
 }
 
-.notification{
-	width:60%;
-	float:left;
-}
 
 .myProfile{
 	width:25%;
@@ -68,30 +64,37 @@ button{
 	height:50%;
 }
 
-.openApplication
-	height:50%;
 
+.notification{
+	position: relative;
+	width:100%;
+	float:right;
+	height: 50%;
 }
 
-
 #notificationList{
-	position: relative;
-
+	position: absolute;
+	top: 100%;
+	background: #CDCAB9;
+	border: 1px solid;
+	visibility: hidden;
 }
 
 .notificationWrapper{
 	position: relative;
-	width: 40%;
-	left:10%;
-	float: left;
-}
+	float: right;
+	width: 15%;
+	margin-right: 1%;
+	}
 
 .coursesHomeOdd{
 	background: #CDCAB9;
+	color:#432F21;
 	font-weight: normal;
 }
 
 .coursesHomeEven{
+	color: #432F21;
 	font-weight: normal;
 }
 
@@ -105,11 +108,27 @@ button{
 
 }
 
-.logOut:hover{
-	position: relative;
-    width: 10%;
-    float: right;
-    color:  #FFE1B9;
-    font-weight: bold;
 
+.logOutText:hover{
+    font-weight: bold;
+}
+
+.profile:hover{
+	font-weight: bold;
+}
+
+
+.nameCourse{
+
+	float:left;
+
+}
+
+.instructorCourse{
+	float:left;
+	margin-left: 10%;
+}
+
+.timeCourse{
+	text-align: right;
 }
