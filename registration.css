@@ -35,7 +35,7 @@ select {
 .itemContainer {
 	position: relative;
 	width: 100%;
-	height: 10%;
+	height: 15%;
 }
 
 p.name {
@@ -53,9 +53,9 @@ p.name {
 }
 #modal { display: none; }
 #close { background: #CCC; color: #333; font-weight: bold; padding: 5px 10px; border: none; }
-#close:hover { background: #aaa; } 
+#close:hover { background: #aaa; }
 #done { background: #CCC; color: #333; font-weight: bold; padding: 10px 25px; border: none; }
-#done:hover { background: #aaa; } 
+#done:hover { background: #aaa; }
 .courseBox {
 	position: relative;
 	margin-left:15%;
