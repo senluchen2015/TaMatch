@@ -9,6 +9,14 @@ $(function(){
 		})
 	$("#add")
 		.click(function(){
-			$.pageslide({ direction: 'left', href: 'courseHistory.html'})
-		})
+				// var options = document.getElementById("selCourse").options;
+				// var selectedIndex = document.getElementById("selCourse").selectedIndex;
+				// console.log(options[selectedIndex]);
+				var values = $('#selCourse').val();
+				values.forEach(function(item) {
+					$(".courseBox").append(item + "<br>");
+					console.log(item);
+				})
+	})			
+
 });

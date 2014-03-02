@@ -49,8 +49,24 @@ p.name {
 	margin-left: 10%;
 	float: left;
 	margin-top: 5px;
-
 	font-size: 18px;
+}
+#modal { display: none; }
+#modal a { background: #CCC; color: #333; font-weight: bold; padding: 5px 10px; border: none; }
+#modal a:hover { background: #aaa; } 
+.courseBox {
+	position: relative;
+	margin-left:15%;
+	margin-right:19%;
+	background-color: #CDCAB9;
+	width: 60%;
+	height: 60%;
+	overflow: scroll;
+	text-align: left;
+}
+.addCourseButton {
+	position: relative;
+	margin-left:21%;
 }
 .submitButton {
 	position: relative;
