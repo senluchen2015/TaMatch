@@ -2,11 +2,12 @@
 	<head>
 		<link rel='shortcut icon' href='images/TC.png'/>
 		<link rel='stylesheet' href='index.css'/>
-		<link rel='stylesheet' href="studentReg.css">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js">
-		</script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js">
-		</script>
+		<link rel='stylesheet' href="registration.css"/>
+		<pre><code><link rel='stylesheet' href="srobbin-jquery/jquery.pageslide.css"/></code></pre>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<script src="srobbin-jquery/jquery.pageslide.js"></script>
+		<script src="srobbin-jquery/jquery.pageslide.min.js"></script>
 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 		<script src="studentReg.js"></script>
 		<title>TA Match Student Registration</title>
@@ -68,9 +69,9 @@
 					</p>
 				</div>
 				<div class='itemContainer'>
-					<button class= 'fsCancelButton' id='cancel'>
-						Cancel
-					</button>
+					<p class = 'name'>
+						Course History
+					</p>
 				</div>
 			</div>
 			<div class ='inputItems'>
@@ -251,9 +252,444 @@
 						<option>Wind and Percussion Performance</option>
 						<option>Writing Program</option>
 					</select>
-				</div>
+				</div>				
 				<div class='itemContainer'>
-					<button class='fsSubmitButton' id='submit'>
+					<button href="#modal" class="addCourses">Add Courses</button>
+					<div id="modal" style="display:none">
+					    <h2>Course History</h2><br>
+						 Department &nbsp;&nbsp;&nbsp;
+						 		<select class="departments" id="departments" onclick="displaySelected();">
+									<option value="" selected="selected">&nbsp; </option>
+									<option value="ACCOUNT">ACCOUNT - Accounting</option>
+									<option value="ACCT">ACCT - Accounting &amp; Info Systems</option>
+									<option value="ACCTX">ACCTX - Accounting &amp; Info Systems</option>
+									<option value="ADVT">ADVT - Advertising</option>
+									<option value="AFST">AFST - African Studies</option>
+									<option value="AF_AM_ST">AF_AM_ST - African American Studies</option>
+									<option value="AMER_ST">AMER_ST - American Studies</option>
+									<option value="ANTHRO">ANTHRO - Anthropology</option>
+									<option value="APP_PHYS">APP_PHYS - Applied Physics</option>
+									<option value="ARABIC">ARABIC - Arabic</option>
+									<option value="ART">ART - Art Theory &amp; Practice</option>
+									<option value="ART_HIST">ART_HIST - Art History</option>
+									<option value="ASIAN_AM">ASIAN_AM - Asian American Studies</option>
+									<option value="ASIAN_LC">ASIAN_LC - Asian Languages and Cultures</option>
+									<option value="ASIAN_ST">ASIAN_ST - Asian Studies</option>
+									<option value="ASTRON">ASTRON - Astronomy</option>
+									<option value="ATHL_PRA">ATHL_PRA - Athletic Practicum</option>
+									<option value="BIOL_SCI">BIOL_SCI - Biological Sciences</option>
+									<option value="BLAW">BLAW - Business Law</option>
+									<option value="BLAWX">BLAWX - Business Law</option>
+									<option value="BMD_ENG">BMD_ENG - Biomedical Engineering</option>
+									<option value="BUSCOM">BUSCOM - Business and Commercial Law</option>
+									<option value="BUS_ALYS">BUS_ALYS - Business Analyst</option>
+									<option value="BUS_INST">BUS_INST - Business Institutions</option>
+									<option value="CFS">CFS - Chicago Field Studies</option>
+									<option value="CHEM">CHEM - Chemistry</option>
+									<option value="CHEM_ENG">CHEM_ENG - Chemical Engineering</option>
+									<option value="CHINESE">CHINESE - Chinese</option>
+									<option value="CHSS">CHSS - Comp &amp; Hist Social Science</option>
+									<option value="CIC">CIC - CIC Traveling Scholar</option>
+									<option value="CIS">CIS - Computer Information Systems</option>
+									<option value="CIV_ENV">CIV_ENV - Civil &amp; Envrnmtl Engineering</option>
+									<option value="CLASSICS">CLASSICS - Classics - Readings in Englis</option>
+									<option value="CLIN_PSY">CLIN_PSY - Clinical Psychology</option>
+									<option value="CLIN_RES">CLIN_RES - Clinical Research &amp; Reg Admin</option>
+									<option value="CME">CME - Chicago Metropolitan Exchange</option>
+									<option value="CMN">CMN - Communication Related Courses</option>
+									<option value="COG_SCI">COG_SCI - Cognitive Science</option>
+									<option value="COMM_ST">COMM_ST - Communication Studies</option>
+									<option value="COMP_LIT">COMP_LIT - Comparative Literary Studies</option>
+									<option value="CONDUCT">CONDUCT - Conducting</option>
+									<option value="CONPUB">CONPUB - Constitutional and Public Law</option>
+									<option value="COUN">COUN - Counseling</option>
+									<option value="CRDV">CRDV - Career Development</option>
+									<option value="CRIM">CRIM - Criminal Law</option>
+									<option value="CRT_INT">CRT_INT - Certified Internal Auditor</option>
+									<option value="CSD">CSD - Comm Sci &amp; Disorders</option>
+									<option value="DANCE">DANCE - Dance</option>
+									<option value="DECS">DECS - Managerial Econ &amp; Decision Sci</option>
+									<option value="DIV_MED">DIV_MED - Divorce Mediation Training</option>
+									<option value="DSGN">DSGN - Segal Design Institute</option>
+									<option value="EARTH">EARTH - Earth and Planetary Sciences</option>
+									<option value="ECON">ECON - Economics</option>
+									<option value="EECS">EECS - Elect Engineering &amp; Comp Sci</option>
+									<option value="ENGLISH">ENGLISH - English</option>
+									<option value="ENTREP">ENTREP - Entrepreneurship &amp; Innovation</option>
+									<option value="ENVR_POL">ENVR_POL - Environmental Policy &amp; Culture</option>
+									<option value="ENVR_SCI">ENVR_SCI - Environmental Science</option>
+									<option value="EPI_BIO">EPI_BIO - Epidemiology &amp; Biostats</option>
+									<option value="ES_APPM">ES_APPM - Engineering Sci &amp; Applied Mat</option>
+									<option value="FINANCE">FINANCE - Finance</option>
+									<option value="FINC">FINC - Finance</option>
+									<option value="FINCX">FINCX - Finance</option>
+									<option value="FN_EXTND">FN_EXTND - CFP Extended</option>
+									<option value="FRENCH">FRENCH - French</option>
+									<option value="GBL_HLTH">GBL_HLTH - Global Health</option>
+									<option value="GENET_CN">GENET_CN - Genetic Counseling</option>
+									<option value="GEN_CMN">GEN_CMN - General Comm &amp; Intro Courses</option>
+									<option value="GEN_ENG">GEN_ENG - General Engineering</option>
+									<option value="GEN_LA">GEN_LA - General Liberal Arts</option>
+									<option value="GEN_MUS">GEN_MUS - General Music</option>
+									<option value="GEOG">GEOG - Geography</option>
+									<option value="GERMAN">GERMAN - German</option>
+									<option value="GNDR_ST">GNDR_ST - Gender Studies</option>
+									<option value="GREEK">GREEK - Greek</option>
+									<option value="HC_COM">HC_COM - Healthcare Compliance</option>
+									<option value="HDPS">HDPS - Human Develop &amp; Psych Svcs</option>
+									<option value="HDSP">HDSP - Human Development &amp; Social Pol</option>
+									<option value="HEBREW">HEBREW - Hebrew</option>
+									<option value="HEMA">HEMA - Health Enterprise Management</option>
+									<option value="HINDI">HINDI - Hindi</option>
+									<option value="HISTORY">HISTORY - History</option>
+									<option value="HQS">HQS - Hlthcare Quality &amp; Pat Safety</option>
+									<option value="HSIP">HSIP - Health Sciences Integrated Prg</option>
+									<option value="HSR">HSR - Health Services Research</option>
+									<option value="HUM">HUM - Humanities</option>
+									<option value="IBIS">IBIS - Interdepartmental Bio Sciences</option>
+									<option value="IEMS">IEMS - Indust Eng &amp; Mgmt Sciences</option>
+									<option value="IGP">IGP - Integ Life Sciences</option>
+									<option value="IMC">IMC - Integ Marketing Communication</option>
+									<option value="INF_TECH">INF_TECH - Information Technology</option>
+									<option value="INTG_SCI">INTG_SCI - Integrated Science</option>
+									<option value="INTL">INTL - International Business</option>
+									<option value="INTLM">INTLM - International Business</option>
+									<option value="INTLX">INTLX - International Business</option>
+									<option value="INTL_ST">INTL_ST - International Studies</option>
+									<option value="IPLS">IPLS - Liberal Studies</option>
+									<option value="ISEN">ISEN - Initiative Sustain &amp; Energy</option>
+									<option value="ITALIAN">ITALIAN - Italian</option>
+									<option value="JAPANESE">JAPANESE - Japanese</option>
+									<option value="JAZZ_ST">JAZZ_ST - Jazz Studies</option>
+									<option value="JOUR">JOUR - Journalism</option>
+									<option value="JRN_WRIT">JRN_WRIT - Journalistic Writing</option>
+									<option value="JWSH_ST">JWSH_ST - Jewish Studies</option>
+									<option value="KELLG_FE">KELLG_FE - Financial Economics</option>
+									<option value="KELLG_MA">KELLG_MA - Managerial Analytics</option>
+									<option value="KIEI">KIEI - Kellogg Inn &amp; Entrep Initiativ</option>
+									<option value="KOREAN">KOREAN - Korean</option>
+									<option value="KPPI">KPPI - Kellogg Public-Private Init</option>
+									<option value="KPPIX">KPPIX - Kellogg Public-Private Init</option>
+									<option value="LATIN">LATIN - Latin</option>
+									<option value="LATINO">LATINO - Latina and Latino Studies</option>
+									<option value="LAWSTUDY">LAWSTUDY - Law Studies</option>
+									<option value="LDRSHP">LDRSHP - Center for Leadership</option>
+									<option value="LEADERS">LEADERS - Leadership</option>
+									<option value="LEAD_ART">LEAD_ART - Art of Leadership</option>
+									<option value="LEGAL_ST">LEGAL_ST - Legal Studies</option>
+									<option value="LING">LING - Linguistics</option>
+									<option value="LIT">LIT - Literature</option>
+									<option value="LITARB">LITARB - Litigation and Arbitration</option>
+									<option value="LOC">LOC - Learning &amp; Org Change</option>
+									<option value="LRN_SCI">LRN_SCI - Learning Sciences</option>
+									<option value="MATH">MATH - Mathematics</option>
+									<option value="MAT_SCI">MAT_SCI - Materials Science &amp; Eng</option>
+									<option value="MBIOTECH">MBIOTECH - Masters in Biotechnology</option>
+									<option value="MCW">MCW - Master of Creative Writing</option>
+									<option value="MECH_ENG">MECH_ENG - Mechanical Engineering</option>
+									<option value="MECN">MECN - Managerial Economics</option>
+									<option value="MECNX">MECNX - Decision Sciences</option>
+									<option value="MECS">MECS - Managerial Economic &amp; Strategy</option>
+									<option value="MEDM">MEDM - Media Management</option>
+									<option value="MED_INF">MED_INF - Medical Informatics</option>
+									<option value="MED_SKIL">MED_SKIL - Mediation Skills Training</option>
+									<option value="MENA">MENA - Middle East &amp; North Africa St</option>
+									<option value="MGMT">MGMT - Management</option>
+									<option value="MGMTM">MGMTM - Management</option>
+									<option value="MGMTX">MGMTX - Management</option>
+									<option value="MHB">MHB - Medical Humanities &amp; Bioethics</option>
+									<option value="MIT">MIT - Media Industries &amp; Tech</option>
+									<option value="MKTG">MKTG - Marketing</option>
+									<option value="MKTGX">MKTGX - Marketing</option>
+									<option value="MMSS">MMSS - Math Methods in the Social Sc</option>
+									<option value="MOB_APP">MOB_APP - Mobile Application Developer</option>
+									<option value="MORS">MORS - Management and Organizations</option>
+									<option value="MORSX">MORSX - Management and Organizations</option>
+									<option value="MPD">MPD - Master of Product Development</option>
+									<option value="MPPA">MPPA - Master of Public Policy Admin</option>
+									<option value="MSA">MSA - Sports Administration</option>
+									<option value="MSC">MSC - MS in Communication</option>
+									<option value="MSCI">MSCI - Master of Science in Clin Inv</option>
+									<option value="MSIA">MSIA - Master of Science in Analytics</option>
+									<option value="MSRC">MSRC - Master of Regulatory Complianc</option>
+									<option value="MSTP">MSTP - Medical Scientist Training</option>
+									<option value="MS_ED">MS_ED - MS in Educ &amp; Social Policy</option>
+									<option value="MS_FT">MS_FT - MS in Marital &amp; Family Therapy</option>
+									<option value="MS_HE">MS_HE - MS in Higher Ed Admin &amp; Policy</option>
+									<option value="MS_LOC">MS_LOC - Learning &amp; Org Change</option>
+									<option value="MTS">MTS - Media, Technology &amp; Society</option>
+									<option value="MUSEUM">MUSEUM - Museum Studies</option>
+									<option value="MUSIC">MUSIC - Music</option>
+									<option value="MUSICOL">MUSICOL - Musicology</option>
+									<option value="MUSIC_ED">MUSIC_ED - Music Education</option>
+									<option value="MUS_COMP">MUS_COMP - Music Composition</option>
+									<option value="MUS_TECH">MUS_TECH - Music Technology</option>
+									<option value="MUS_THRY">MUS_THRY - Music Theory</option>
+									<option value="NAV_SCI">NAV_SCI - Naval Science</option>
+									<option value="NEUROBIO">NEUROBIO - Neurobiology &amp; Physiology</option>
+									<option value="NUIN">NUIN - Neuroscience</option>
+									<option value="OPNS">OPNS - Operations Management</option>
+									<option value="OPNSX">OPNSX - Operations Management</option>
+									<option value="ORG_BEH">ORG_BEH - Organizational Behavior</option>
+									<option value="PA">PA - Physician Assistant</option>
+									<option value="PBC">PBC - Plant Biology &amp; Conservation</option>
+									<option value="PERF_ST">PERF_ST - Performance Studies</option>
+									<option value="PERSIAN">PERSIAN - Persian</option>
+									<option value="PHIL">PHIL - Philosophy</option>
+									<option value="PHIL_NP">PHIL_NP - Philanthropy &amp; Nonprofit Fund</option>
+									<option value="PHYSICS">PHYSICS - Physics</option>
+									<option value="PIANO">PIANO - Piano</option>
+									<option value="POLI_SCI">POLI_SCI - Political Science</option>
+									<option value="PORT">PORT - Portuguese</option>
+									<option value="PPTYTORT">PPTYTORT - Property and Tort Law</option>
+									<option value="PRDV">PRDV - Personal Development</option>
+									<option value="PREDICT">PREDICT - Predictive Analytics</option>
+									<option value="PRED_BUS">PRED_BUS - Predictive Business Analytics</option>
+									<option value="PROJ_MGT">PROJ_MGT - Project Management</option>
+									<option value="PROJ_PMI">PROJ_PMI - Project Management</option>
+									<option value="PSED">PSED - Predictive Science &amp; Engineer</option>
+									<option value="PSYCH">PSYCH - Psychology</option>
+									<option value="PUB_HLTH">PUB_HLTH - Master's in Public Health</option>
+									<option value="QARS">QARS - Qual Assur &amp; Reg Science</option>
+									<option value="REAL">REAL - Real Estate</option>
+									<option value="RELIGION">RELIGION - Religious Studies</option>
+									<option value="RTVF">RTVF - Radio/Television/Film</option>
+									<option value="SCS">SCS - School of Continuing Studies</option>
+									<option value="SESP">SESP - SESP Core</option>
+									<option value="SHC">SHC - Science in Human Culture</option>
+									<option value="SLAVIC">SLAVIC - Slavic Languages &amp; Literature</option>
+									<option value="SOCIOL">SOCIOL - Sociology</option>
+									<option value="SOC_POL">SOC_POL - Social Policy</option>
+									<option value="SPANISH">SPANISH - Spanish</option>
+									<option value="SPANPORT">SPANPORT - Spanish and Portuguese</option>
+									<option value="STAT">STAT - Statistics</option>
+									<option value="STRINGS">STRINGS - String Instruments</option>
+									<option value="SWAHILI">SWAHILI - Swahili</option>
+									<option value="TAXLAW">TAXLAW - Taxation Law</option>
+									<option value="TEACH_ED">TEACH_ED - Teacher Education</option>
+									<option value="TGS">TGS - TGS General Registrations</option>
+									<option value="TH&amp;DRAMA">TH&amp;DRAMA - Theatre &amp; Drama</option>
+									<option value="THEATRE">THEATRE - Theatre</option>
+									<option value="TRANS">TRANS - Transportation</option>
+									<option value="TURKISH">TURKISH - Turkish</option>
+									<option value="URBAN_ST">URBAN_ST - Urban Studies</option>
+									<option value="VOICE">VOICE - Voice &amp; Opera</option>
+									<option value="WIND_PER">WIND_PER - Wind &amp; Percussion</option>
+									<option value="WRITING">WRITING - Writing Arts</option>
+									<option value="YIDDISH">YIDDISH - Yiddish</option>
+								</select><br>
+								<div class= "courseList" style="vertical-align: top;">Course Name 
+									<select multiple="" id="selCourse">
+										<option selected="selected">&nbsp;</option>
+										<option>EA1 Engineering Analysis</option>
+										<option>EDC - Engineering Design and Communication</option>
+										<option>EECS 385 - Optoelectronics</option>
+										<option>EECS 100 - Electrons, Photons, and Bits: Adventures in Electrical and Computer Engineering</option>
+										<option>EECS 101 (CS 101) - An Introduction to Computer Science For Everyone</option>
+										<option>EECS 110 - Introduction to Computer Programming</option>
+										<option>EECS 111 - Fundamentals of Computer Programming I</option>
+										<option>EECS 120 - Intro to Computers & Info Technology</option>
+										<option>EECS 130 - Tools and Technology of the World Wide Web</option>
+										<option>EECS 202 - Introduction to Electrical Engineering</option>
+										<option>EECS 203 - Introduction to Computer Engineering</option>
+										<option>EECS 205 - Fundamentals of Computer System Software</option>
+										<option>EECS 211 - Fundamentals of Computer Programming II</option>
+										<option>EECS 212 - Mathematical Foundations of Computer Science</option>
+										<option>EECS 213 - Introduction to Computer Systems</option>
+										<option>EECS 214 A - Data Structures and Data Management</option>
+										<option>EECS 214 B - Data Structures and Data Management</option>
+										<option>EECS 221 - Fundamentals of Circuits</option>
+										<option>EECS 222 - Fundamentals of Signals and Systems</option>
+										<option>EECS 223 - Fundamentals of Solid State Engineering</option>
+										<option>EECS 224 - Fundamentals of Electromagnetics and Photonics</option>
+										<option>EECS 225 - Fundamentals of Electronics</option>
+										<option>EECS 230 - Programming for Engineers</option>
+										<option>EECS 231 - Advanced Programming for Computer Engineers</option>
+										<option>EECS 250 - Physical Electronics and Devices</option>
+										<option>EECS 270 - Applications of Electronic Devices</option>
+										<option>EECS 295 - Introductory Robotics Laboratory</option>
+										<option>EECS 302 - Probabilistic Systems and Random Signals</option>
+										<option>EECS 303 - Advanced Digital Logic Design</option>
+										<option>EECS 307 Communications Systems</option>
+										<option>EECS 308 - Applied Electromagnetics and Photonics</option>
+										<option>EECS 313 - Telecommunication Networks for Multimedia</option>
+										<option>EECS 317 - Data Management and Information Processing</option>
+										<option>EECS 321 - Programming Languages</option>
+										<option>EECS 322 - Compiler Construction</option>
+										<option>EECS 325 - Artificial Intelligence Programming</option>
+										<option>EECS 328 - Numerical Methods for Engineers</option>
+										<option>EECS 330 - Human Computer Interaction</option>
+										<option>EECS 332 - Digital Image Analysis</option>
+										<option>EECS 333 - Introduction to Communication Networks</option>
+										<option>EECS 334 - Introduction to Computer Vision</option>
+										<option>EECS 335 - Introduction to the Theory of Computation</option>
+										<option>EECS 336 - Design and Analysis of Algorithms</option>
+										<option>EECS 337 - Introduction to Semantic Information Processing</option>
+										<option>EECS 338 - Practicum in Intelligent Information Systems</option>
+										<option>EECS 339 - Introduction to Databases</option>
+										<option>EECS 340 - Introduction to Computer Networking</option>
+										<option>EECS 343 - Operating Systems</option>
+										<option>EECS 344 - Design of Computer Problem Solvers</option>
+										<option>EECS 345 - Distributed Systems</option>
+										<option>EECS 346 - Microprocessor System Design</option>
+										<option>EECS 347-1 - Microprocessor Systems Project I</option>
+										<option>EECS 347-2 - Microprocessor Systems Project II</option>
+										<option>EECS 348 - Introduction to Artificial Intelligence</option>
+										<option>EECS 349 - Machine Learning</option>
+										<option>EECS 350 - Introduction to Computer Security</option>
+										<option>EECS 351 - Introduction to Computer Graphics</option>
+										<option>EECS 352 - Machine Perception of Music & Audio</option>
+										<option>EECS 353 - Digital Microelectronics</option>
+										<option>EECS 354 - Network Penetration and Security</option>
+										<option>EECS 355 - ASIC and FPGA Design</option>
+										<option>EECS 356 - Introduction to Formal Specification and Verification</option>
+										<option>EECS 357 - Introduction to VLSI CAD</option>
+										<option>EECS 358 - Introduction to Parallel Computing</option>
+										<option>EECS 359 - Digital Signal Processing</option>
+										<option>EECS 360 - Introduction to Feedback Systems</option>
+										<option>EECS 361 - Computer Architecture I</option>
+										<option>EECS 362 - Computer Architecture Project</option>
+										<option>EECS 363 - Digital Filtering</option>
+										<option>EECS 366 - Designing and Constructing Models with Multi-agent Languages</option>
+										<option>EECS 368/468 - Programming Massively Parallel Processors with CUDA</option>
+										<option>EECS 369 - Introduction to Sensor Networks</option>
+										<option>EECS 370 - Computer Game Design</option>
+										<option>EECS 371 - Knowledge Representation and Reasoning</option>
+										<option>EECS 372/472 - Designing and Constructing Models with Multi-Agent Languages</option>
+										<option>EECS 374 - Introduction to Digital Control</option>
+										<option>EECS 378 - Digital Communications</option>
+										<option>EECS 379 - Introduction to Lasers and Fiber Optics</option>
+										<option>EECS 380 - Wireless Communications</option>
+										<option>EECS 381 - Electronic Properties of Materials</option>
+										<option>EECS 382 - Photonic Information Processing</option>
+										<option>EECS 383 - Fiber-Optic Communications</option>
+										<option>EECS 384 - Solid State Electronic Devices</option>
+										<option>EECS 386 - Computational Electromagnetics and Photonics</option>
+										<option>EECS 388 - Nanotechnology</option>
+										<option>EECS 389 - Superconductivity and Its Applications</option>
+										<option>EECS 390 - Introduction to Robotics</option>
+										<option>EECS 391 - VLSI Systems Design</option>
+										<option>EECS 392 VLSI Systems Design Projects</option>
+										<option>EECS 393/493 - Design and Analysis of High-Speed Integrated Circuits</option>
+										<option>EECS 394 - Software Project Management</option>
+										<option>EECS 395 (C. Liu)</option>
+										<option>EECS 395 - Game Development Studio</option>
+										<option>EECS 395 - Algorithmic and Economic Aspects of Social Networks</option>
+										<option>EECS 395/495 (LRN_SCI 451) - Tangible Interaction Design and Learning (Horn)</option>
+										<option>EECS 395/495 - (Advanced Topics in) Computer Architecture</option>
+										<option>EECS 395/495 - (Advanced Topics in) Quantum Electronics</option>
+										<option>EECS 395/495 - (Chen) Title TBA</option>
+										<option>EECS 395/495 - (Special Topics) Computational Complexity</option>
+										<option>EECS 395/495 - (Special Topics) Embedded Systems</option>
+										<option>EECS 395/495 - (Special Topics) Innovation in Journalism & Technology</option>
+										<option>EECS 395/495 - A Hands-on Course in Communication Systems</option>
+										<option>EECS 395/495 - Advanced Quantum Transport & Magneto Transport</option>
+										<option>EECS 395/495 - Algorithmic DNA Self-Assembly (Kao)</option>
+										<option>EECS 395/495 - Algorithmic Mechanism Design</option>
+										<option>EECS 395/495 - Algorithmic Techniques for Bioinformatics</option>
+										<option>EECS 395/495 - Art of Multicore Concurrent Programming</option>
+										<option>EECS 395/495 - Cardiovascular Instrumentation</option>
+										<option>EECS 395/495 - Cognitive Simulation for Virtual Characters</option>
+										<option>EECS 395/495 - Collaboration Technology</option>
+										<option>EECS 395/495 - Computational Auditory Scene Analysis</option>
+										<option>EECS 395/495 - Computational Geometry</option>
+										<option>EECS 395/495 - Computational Photography Seminar</option>
+										<option>EECS 395/495 - Derandomization</option>
+										<option>EECS 395/495 - Distributed Systems in Challenging Environments</option>
+										<option>EECS 395/495 - Geospatial Vision and Visualization</option>
+										<option>EECS 395/495 - Human-level Artificial Intelligence</option>
+										<option>EECS 395/495 - Intermediate Computer Graphics</option>
+										<option>EECS 395/495 - Introduction to Computational Photography</option>
+										<option>EECS 395/495 - Introduction to Cryptography</option>
+										<option>EECS 395/495 - Kolmogorov Complexity</option>
+										<option>EECS 395/495 - Mixed Signal Circuits Systems</option>
+										<option>EECS 395/495 - Networking Problems in Cloud Computing</option>
+										<option>EECS 395/495 - Object-Oriented Languages and Environments</option>
+										<option>EECS 395/495 - Online Advertising: A Systems Approach</option>
+										<option>EECS 395/495 - Probabilistic Graphical Models</option>
+										<option>EECS 395/495 - Programming Languages Seminar</option>
+										<option>EECS 395/495 - Simulation-Based Virtual Characters for Interactive Entertainment</option>
+										<option>EECS 395/495 - Special Relativity in Optics</option>
+										<option>EECS 395/495 - Technology Infrastructure: Concepts, Requirements, Design and Operation</option>
+										<option>EECS 395/495 - The Probabilistic Method</option>
+										<option>EECS 395/495 - Web Information Retrieval and Extraction</option>
+										<option>EECS 397 - Introduction to Real-time Sytems</option>
+										<option>EECS 398 - Electrical Engineering Design</option>
+										<option>EECS 399 - Independent Study</option>
+										<option>EECS 401 - Fundamentals of Electronic Devices</option>
+										<option>EECS 402 - Advanced Electronic Devices</option>
+										<option>EECS 403 - Quantum Semiconductors</option>
+										<option>EECS 404 - Quantum Electronics</option>
+										<option>EECS 405 - Advanced Photonics</option>
+										<option>EECS 406 - Nonlinear Optics</option>
+										<option>EECS 407 - Quantum Optics (same as Physics 427)</option>
+										<option>EECS 408 - Computational Electrodynamics</option>
+										<option>EECS 409 - Semiconductor Lasers</option>
+										<option>EECS 410 - System Theory</option>
+										<option>EECS 418 - Advanced Digital Signal Processing</option>
+										<option>EECS 420 - Digital Image Processing</option>
+										<option>EECS 421 - Multimedia Signal Processing</option>
+										<option>EECS 422 - Random Processes in Communications and Control I</option>
+										<option>EECS 423 - Random Processes in Communications and Control II</option>
+										<option>EECS 425 - Quantum Electronics II: Noise, Modulation, and Quantum Properties of Laser Emissions</option>
+										<option>EECS 426 - Signal Detection and Estimation</option>
+										<option>EECS 427 - Optical Communications</option>
+										<option>EECS 428 - Information Theory</option>
+										<option>EECS 429 - Selected Topics in Quantum Information Science and Technology</option>
+										<option>EECS 430 - Design of Interactive Learning Environments</option>
+										<option>EECS 431 - Human Perception and Electronic Media</option>
+										<option>EECS 432 - Advanced Computer Vision</option>
+										<option>EECS 435 - Neural Networks</option>
+										<option>EECS 438 - Interdisciplinary Nonlinear Dynamics</option>
+										<option>EECS 440 - Advanced Networking</option>
+										<option>EECS 441 - Resource Virtualization</option>
+										<option>EECS 442 - Dynamic Behavior of Applications, Hosts, and Networks</option>
+										<option>EECS 443 - Advanced Operating Systems</option>
+										<option>EECS 450 - Internet Security</option>
+										<option>EECS 452 - Advanced Computer Architecture I</option>
+										<option>EECS 453 - Parallel Architectures</option>
+										<option>EECS 454 - Advanced Communication Networks</option>
+										<option>EECS 455 - Distributed Computing Systems</option>
+										<option>EECS 457 - Advanced Algorithms</option>
+										<option>EECS 458 - Parallel Algorithms for VLSI Computer-Aided Design</option>
+										<option>EECS 459 - VLSI Algorithmics</option>
+										<option>EECS 463 - Adaptive Filters</option>
+										<option>EECS 472 - Designing and Constructing Models with Multi-Agent Languages</option>
+										<option>EECS 473-1 NUvention: Web</option>
+										<option>EECS 473-2 NUvention: Web</option>
+										<option>EECS 478 - Advanced Digital Communications</option>
+										<option>EECS 479 - Nonlinear Optimization</option>
+										<option>EECS 495 - Introduction to Nonlinear Control Theory</option>
+										<option>EECS 495 - Machine Learning and Artificial Intelligence for Robotics</option>
+										<option>EECS 495 - Physics and Technology of Quantum Devices</option>
+										<option>EECS 495 - Probabilistic Systems and Random Signals</option>
+										<option>EECS 495 - Qualitative Representations</option>
+										<option>EECS 495 - Sparse and low-rank recovery problems in Machine Learning</option>
+										<option>EECS 495 - Stochastic Models for Web 2.0</option>
+										<option>EECS 510 - Social Media Mining</option>
+										<option>EECS 510 - Topics in Information Theory</option>
+										<option>LS 426 - Design of Technological Tools for Thinking and Learning</option>
+									</select><br><br></div>
+								<button class="addCourseButton" id="add"> Add Course </button><br><br>
+								<div class="courseList">
+									<div style="width:21%; float:left;">
+									Currently Added
+									</div>
+									<div class="courseBox">
+									</div>
+								</div>
+					    <p><a href="javascript:$.pageslide.close()">Close</a></p>
+						<script>
+						    $(".addCourses").pageslide({ direction: "left", modal: true });
+						</script>
+					</div>
+				</div>
+
+				<div class='itemContainer'>
+					<button class='cancelButton' id='cancel'>
+						Cancel
+					</button>
+					<button class='submitButton' id='submit'>
 						Submit
 					</button>
 				</div>

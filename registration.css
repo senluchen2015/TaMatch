@@ -13,18 +13,14 @@ select {
 	font-size: 18;
 }
 
-.title {
-	text-indent: 20px;
-}
-
 .formContainer {
 	position: relative;
 	width: 60%;
-	overflow: hidden;
 }
 
 .inputNames {
 	position: absolute;
+	top: 1%;
 	width: 30%;
 	height: 100%;
 }
@@ -48,7 +44,31 @@ p.name {
 	text-align: right;
 }
 
-.fsSubmitButton {
+.addCourses {
+	position: relative;
+	margin-left: 10%;
+	float: left;
+	margin-top: 5px;
+	font-size: 18px;
+}
+#modal { display: none; }
+#modal a { background: #CCC; color: #333; font-weight: bold; padding: 5px 10px; border: none; }
+#modal a:hover { background: #aaa; } 
+.courseBox {
+	position: relative;
+	margin-left:15%;
+	margin-right:19%;
+	background-color: #CDCAB9;
+	width: 60%;
+	height: 60%;
+	overflow: scroll;
+	text-align: left;
+}
+.addCourseButton {
+	position: relative;
+	margin-left:21%;
+}
+.submitButton {
 	position: relative;
 	margin-top: 5px;
 	margin-left: 10%;
@@ -69,11 +89,10 @@ p.name {
 	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
-
-.fsCancelButton {
+.cancelButton {
 	margin-top: 5px;
 	margin-left: 10%;
-	float: right;
+	float: left;
 
 	border-top:	2px solid #a3ceda;
 	border-left: 2px solid #a3ceda;
