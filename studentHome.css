@@ -1,10 +1,10 @@
-.topButtonRow{
+/*.topButtonRow{
 	display:block;
 	position: relative;
 	width:100%;
 	top: 1%;
 	height:10%;
-}
+}*/
 
 button{
 	height:90%;
@@ -28,8 +28,6 @@ button{
 }
 
 
-.topText{
-}
 
 .departments{
 	position: relative;
@@ -80,10 +78,11 @@ button{
 	visibility: hidden;
 }
 
+
 .notificationWrapper{
 	position: relative;
 	float: right;
-	width: 15%;
+	width: 20%;
 	margin-right: 1%;
 	}
 
@@ -131,4 +130,20 @@ button{
 
 .timeCourse{
 	text-align: right;
+}
+
+#detailForm{
+	visibility: hidden;
+}
+
+
+.applicationForm{
+	visibility: hidden;
+}
+
+.personalText{
+	position: relative;
+	height: 30%;
+	width: 80%;
+	float: left;
 }

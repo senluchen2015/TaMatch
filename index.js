@@ -29,7 +29,7 @@ $(function(){
 		width: 500,
 		modal: true,
 		draggable: false,
-		dialogClass: "no-close",
+		// dialogClass: "no-close",
 		buttons: {
 			"Cancel": function(){
 				$(this).dialog("close");
