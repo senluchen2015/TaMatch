@@ -147,3 +147,7 @@ button{
 	width: 80%;
 	float: left;
 }
+
+#confirmForm{
+	visibility: hidden;
+}

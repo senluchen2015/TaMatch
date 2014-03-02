@@ -109,16 +109,26 @@ function loadDetail(name,instructor,time,quarter,commitment,size,details,oddOrEv
 									$(this).dialog("close");
 								},
 								"Submit": function(){
-									console.log(i);
-									if(i%2==0){
-										html= "<div class=coursesHomeEven>" + name + "</div>"; 
-										$("#openText").append(html);
-									}
-									else{
-										html= "<div class=coursesHomeEven>" + name + "</div>"; 
-										$("#openText").append(html);
-									}
-									$(".ui-dialog-content").dialog("close");
+										document.getElementById("confirmForm").style.visibility="visible";								
+									$("#confirmForm").dialog({
+										autoOpen: true,
+										height: 200,
+										width: 300,
+										modal: true,
+										draggable: false,
+										dialogClass: "no-close",
+										buttons: {	
+											"Cancel": function(){
+												$(this).dialog("close");
+											},
+											"Submit": function(){
+												html= "<div class=coursesHomeEven>" + name + "</div>"; 
+												$("#openText").append(html);
+												$(".ui-dialog-content").dialog("close");
+											}					
+										}			
+									});
+									$('.ui-widget-overlay').css('background', 'grey');
 								}
 							}
 					});
