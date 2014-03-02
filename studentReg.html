@@ -483,7 +483,6 @@
 										<option selected="selected">&nbsp;</option>
 										<option>EA1 Engineering Analysis</option>
 										<option>EDC - Engineering Design and Communication</option>
-										<option>EECS 385 - Optoelectronics</option>
 										<option>EECS 100 - Electrons, Photons, and Bits: Adventures in Electrical and Computer Engineering</option>
 										<option>EECS 101 (CS 101) - An Introduction to Computer Science For Everyone</option>
 										<option>EECS 110 - Introduction to Computer Programming</option>
@@ -564,6 +563,7 @@
 										<option>EECS 382 - Photonic Information Processing</option>
 										<option>EECS 383 - Fiber-Optic Communications</option>
 										<option>EECS 384 - Solid State Electronic Devices</option>
+										<option>EECS 385 - Optoelectronics</option>
 										<option>EECS 386 - Computational Electromagnetics and Photonics</option>
 										<option>EECS 388 - Nanotechnology</option>
 										<option>EECS 389 - Superconductivity and Its Applications</option>
@@ -671,14 +671,18 @@
 										<option>LS 426 - Design of Technological Tools for Thinking and Learning</option>
 									</select><br><br></div>
 								<button class="addCourseButton" id="add"> Add Course </button><br><br>
-								<div class="courseList">
+
 									<div style="width:21%; float:left;">
 									Currently Added
 									</div>
 									<div class="courseBox">
-									</div>
-								</div>
-					    <p><a href="javascript:$.pageslide.close()">Close</a></p>
+										<table id="tblData">          
+									        <tbody>
+									        </tbody>
+									    </table>
+									</div><br><br>
+
+					    <div><div style="width:47%; float:left;"><a id="close" href="javascript:$.pageslide.close()">Close</a></div><div style="width:50%; float:left;"><a id="done" href="javascript:$.pageslide.close()">DONE</a></div></div>
 						<script>
 						    $(".addCourses").pageslide({ direction: "left", modal: true });
 						</script>

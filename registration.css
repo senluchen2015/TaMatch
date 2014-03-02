@@ -29,7 +29,7 @@ select {
 	position: relative;
 	left: 30%;
 	width: 70%;
-	height: 100%;
+	height: 60%;
 }
 
 .itemContainer {
@@ -52,15 +52,17 @@ p.name {
 	font-size: 18px;
 }
 #modal { display: none; }
-#modal a { background: #CCC; color: #333; font-weight: bold; padding: 5px 10px; border: none; }
-#modal a:hover { background: #aaa; } 
+#close { background: #CCC; color: #333; font-weight: bold; padding: 5px 10px; border: none; }
+#close:hover { background: #aaa; } 
+#done { background: #CCC; color: #333; font-weight: bold; padding: 10px 25px; border: none; }
+#done:hover { background: #aaa; } 
 .courseBox {
 	position: relative;
 	margin-left:15%;
 	margin-right:19%;
 	background-color: #CDCAB9;
 	width: 60%;
-	height: 60%;
+	height: 55%;
 	overflow: scroll;
 	text-align: left;
 }
