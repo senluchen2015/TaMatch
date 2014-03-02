@@ -112,11 +112,11 @@ function loadDetail(name,instructor,time,quarter,commitment,size,details,oddOrEv
 									console.log(i);
 									if(i%2==0){
 										html= "<div class=coursesHomeEven>" + name + "</div>"; 
-										$("#favoriteText").append(html);
+										$("#openText").append(html);
 									}
 									else{
 										html= "<div class=coursesHomeEven>" + name + "</div>"; 
-										$("#favoriteText").append(html);
+										$("#openText").append(html);
 									}
 									$(".ui-dialog-content").dialog("close");
 								}
