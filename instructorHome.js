@@ -22,3 +22,16 @@ $(function(){
 		$('.ui-widget-overlay').css('background', 'grey');
 		});
 });
+
+$(document).ready(function(){
+	$( "#notification" ).click(function(){
+		if(document.getElementById("notificationList").style.visibility=="hidden"){
+			document.getElementById("notificationList").style.visibility="visible";
+		}
+		else{
+			document.getElementById("notificationList").style.visibility="hidden";
+		}
+		console.log("hi");
+	});
+
+});
