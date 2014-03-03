@@ -61,7 +61,7 @@
 	margin-top: 2%;
 	height: 85%;
 	width: 95%;
-	
+	font-size: 20px;
 }
 
 p.postingBarTitle {
@@ -87,3 +87,4 @@ button.newPostButton {
 	height:35%;
 	width:100%;
 }
+

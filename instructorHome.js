@@ -11,7 +11,9 @@ $(function(){
 				$(this).dialog("close");
 			},
 			"Submit": function(){
-				
+				html = "<div>" + document.getElementById("name").value +"</div>";
+				$(".postingList").append(html);
+				$(this).dialog("close");		
 			}
 		}
 	});
