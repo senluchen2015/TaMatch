@@ -51,7 +51,21 @@ p.name {
 	margin-top: 5px;
 	font-size: 18px;
 }
-#modal { display: none; }
+.departments {
+	margin-left: 6%;
+
+}
+
+#selCourse
+{
+	margin-left:6%;
+}
+
+#modal { 
+	display: none;
+	height:100%;
+
+}
 #close { background: #CCC; color: #333; font-weight: bold; padding: 5px 10px; border: none; }
 #close:hover { background: #aaa; }
 #done { background: #CCC; color: #333; font-weight: bold; padding: 10px 25px; border: none; }
@@ -62,8 +76,8 @@ p.name {
 	margin-right:19%;
 	background-color: #CDCAB9;
 	width: 60%;
-	height: 55%;
-	overflow: scroll;
+	height: 40%;
+	overflow-y: scroll;
 	text-align: left;
 }
 .addCourseButton {
