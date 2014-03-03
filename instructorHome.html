@@ -13,19 +13,56 @@
 	</head>
 	<body>
 		<div class='header'>
-			<a href='index.html'>
-				<img class='logo' src='images/logoRed.png'>
+			<a href="instructorHome.html">
+				<img class='logo'src='images/logoRed.png'>
 			</a>
+				
+				<div class="notificationWrapper">
+					<button class="notification" id="notification">Notifications</button>
+					<div class="notificationList" id="notificationList">
+						<ul>
+							<li>2 New Applications for EECS 213</li>
+							<li>Grant Sheldon messaged you </li>
+						</ul> 	
+					</div>
+				</div>
+
+				<div class="logOut">
+					<div class="logOutText">
+							<a href="index.html">Log out<br></a>
+					</div>
+					<div class="profile">
+						<a href="myProfile.html">My Profile</a>
+					</div>
+
+				</div>
 		</div>
-		<div class='title'>
-			<h1> Instructor </h1>
+
+		<div id="postingDetails" title="Course Details">
+			 <form>
+			 	<fieldset>
+				    <label for="name">Course Name</label></br>
+				    <input type="text" name="name" id="name" value="" class="text ui-widget-content ui-corner-all"></br>
+				    <label for="time">Time</label></br>
+				    <input type="text" name="time" id="time" value="" class="text ui-widget-content ui-corner-all"></br>
+				    <label for="quarter">Quarter</label></br>
+				    <input type="text" name="quarter" id="quarter" value="" class="text ui-widget-content ui-corner-all"></br>
+				    <label for="timeCommitment">Time Commitment</label></br>
+				    <input type="text" name="timeCommitment" id="timeCommitment" value="" class="text ui-widget-content ui-corner-all"></br>
+				    <label for="classSize">Class Size</label></br>
+				    <input type="text" name="classSize" id="classSize" value="" class="text ui-widget-content ui-corner-all"></br>
+				    <label for="otherDetails">Details (optional)</label></br>
+				    <textarea name="otherDetails" id="otherDetails" value="" class="otherDetails"></textarea>
+			   	</fieldset>
+			 </form>
 		</div>
+
 		<div class='postingContainer'>
 			<div class='postingTitleBar'>
 				<p class='postingBarTitle'>
 					My Listings
 				</p>
-				<button class='newPostButton'>
+				<button class='newPostButton' id='newPostButton'>
 					Post New Position
 				</button>
 			</div>

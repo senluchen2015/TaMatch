@@ -1,5 +1,6 @@
 .postingContainer {
 	position: relative;
+	margin-top:4%;
 	margin-left: 20px;
 	height: 500px;
 	width: 600px;
@@ -11,13 +12,56 @@
 	background-color: grey;
 }
 
+
+.notification{
+	position: relative;
+	width:100%;
+	float:right;
+	height: 50%;
+}
+
+#notificationList{
+	position: absolute;
+	top: 100%;
+	background: #CDCAB9;
+	border: 1px solid;
+	visibility: hidden;
+}
+
+
+.notificationWrapper{
+	position: relative;
+	float: right;
+	width: 20%;
+	margin-right: 1%;
+}
+
+.logOut{	
+    position: relative;
+    width: 10%;
+    float: right;
+    color:  #FFE1B9;
+    text-align: right;
+    margin-right: 1%;
+
+}
+
+
+.logOutText:hover{
+    font-weight: bold;
+}
+
+.profile:hover{
+	font-weight: bold;
+}
+
 .postingList {
 	position: relative;
 	margin-left: 2.5%;
 	margin-top: 2%;
 	height: 85%;
 	width: 95%;
-	background-color: aqua;
+	
 }
 
 p.postingBarTitle {
@@ -37,4 +81,9 @@ button.newPostButton {
 	right: 3%;
 	height: 70%;
 	font-size: 16;
+}
+
+#otherDetails {
+	height:35%;
+	width:100%;
 }
