@@ -131,3 +131,8 @@ body {
 #loginForm{
 }
 
+
+
+.newsDetails, .announcementDetails {
+	font-size: 20px;
+}

@@ -94,6 +94,12 @@ function loadDetail(name,instructor,time,quarter,commitment,size,details,oddOrEv
 				"Cancel": function(){
 					$(this).dialog("close");
 				},
+				"Favorite": function(){
+					$(this).dialog("close");
+					html= "<div class=coursesHomeEven>" + name +'&nbsp;&nbsp;<img src="images/delete.png" class="btnDelete"</div>'; 
+					$("#favoriteText").append(html);
+					$(".btnDelete").bind("click", Delete);
+				},
 				"Apply": function(){
 					document.getElementById("applicationForm").style.visibility="visible";
 					$(".className").html( name +" Personal Statement")
@@ -122,8 +128,9 @@ function loadDetail(name,instructor,time,quarter,commitment,size,details,oddOrEv
 												$(this).dialog("close");
 											},
 											"Submit": function(){
-												html= "<div class=coursesHomeEven>" + name + "</div>"; 
+												html= "<div class=coursesHomeEven>" + name +'&nbsp;&nbsp;<img src="images/delete.png" class="btnDelete"</div>'; 
 												$("#openText").append(html);
+												$(".btnDelete").bind("click", Delete);
 												$(".ui-dialog-content").dialog("close");
 											}					
 										}			
@@ -153,3 +160,9 @@ $(document).ready(function(){
 	});
 
 });
+
+
+function Delete(){
+    var par = $(this).parent();
+    par.remove();
+}; 
