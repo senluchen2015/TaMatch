@@ -110,13 +110,18 @@ p.name {
 	margin-left: 10%;
 	float: left;
 
-	border-top:	2px solid #a3ceda;
-	border-left: 2px solid #a3ceda;
-	border-right: 2px solid #4f6267;
-	border-bottom: 2px solid #4f6267;
-	padding: 10px 20px !important;
-	font-size: 14px !important;
-	background-color: #c4f1fe;
+    padding: 10px 15px 11px !important;
+	font-size: 18px !important;
+	background-color: #ff6961;
 	font-weight: bold;
-	color: #2d525d;
+	text-shadow: 1px 1px #ff6961;
+	color: #ffffff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #ff6961;
+	cursor: pointer;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;	
 }
