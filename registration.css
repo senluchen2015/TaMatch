@@ -13,6 +13,10 @@ select {
 	font-size: 18;
 }
 
+.fields {
+	font-size: 12px;
+}
+
 .formContainer {
 	position: relative;
 	width: 60%;

@@ -18,7 +18,8 @@ $(function(){
 				text:"Submit",
 				id:"okButtons",
 				click: function(){
-					html = "<div>" + document.getElementById("name").value +"</div>";
+					html = "<div class='courseName'>" + document.getElementById("name").value +"</div>";
+					html += "<div class='courseTime'>" + document.getElementById("time").value +"</div></br>";
 					$(".postingList").append(html);
 					$(this).dialog("close");		
 				}
