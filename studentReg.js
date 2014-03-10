@@ -13,7 +13,8 @@ $(function(){
 				values.forEach(function(item) {
 					$("#tblData tbody").append("<tr><td>"+item+"&nbsp;&nbsp;<img src='images/redx.png' class='btnDelete'/></td></tr>");
 					$(".btnDelete").bind("click", Delete);	
-					console.log(item);
+					var element = $(".addCourses");
+					$(element).html("Edit Courses");
 				})
 	})			
     $(".btnDelete").bind("click", Delete);
