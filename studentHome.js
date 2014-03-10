@@ -103,7 +103,7 @@ function loadDetail(name,instructor,time,quarter,commitment,size,details,oddOrEv
 					id:"favoriteButtons",
 					click: function(){
 					$(this).dialog("close");
-					html= "<div class=coursesHomeEven>" + name +'&nbsp;&nbsp;<img src="images/delete.png" class="btnDelete"</div>'; 
+					html= "<div class=coursesHomeEven>" + name +'&nbsp;&nbsp;<img src="images/redx.png" class="btnDelete"</div>'; 
 					$("#favoriteText").append(html);
 					$(".btnDelete").bind("click", Delete);
 					}
@@ -154,11 +154,12 @@ function loadDetail(name,instructor,time,quarter,commitment,size,details,oddOrEv
 												text:"Submit",
 												id:"okButtons",
 												click: function(){
-													html= "<div class=coursesHomeEven>" + name +'&nbsp;&nbsp;<img src="images/delete.png" class="btnDelete"</div>'; 
+													html= "<div class=coursesHomeEven>" + name +'&nbsp;&nbsp;<img src="images/redx.png" class="btnDelete"</div>'; 
 													$("#openText").append(html);
 													$(".btnDelete").bind("click", Delete);
 													$(".ui-dialog-content").dialog("close");
 												}
+
 											}					
 										]			
 									});
