@@ -8,14 +8,23 @@ $(function(){
 		modal: true,
 		draggable: false,
 		dialogClass: "no-close",
-		buttons: {
-			"Login": function(){
-				window.location.href="studentHome.html";
+		buttons: [
+			{
+				text: "Cancel",
+				id:"cancelButtons",
+				click: function(){
+					$(this).dialog("close");
+				}
 			},
-			"Cancel": function(){
-				$(this).dialog("close");
+			{
+				text:"Login",
+				id: "okButtons",			
+			 	click: function(){
+					window.location.href="studentHome.html";
+				}
 			}
-		}
+		]
+
 	});
 	$("#loginButton")	
 		.click(function(){
@@ -30,11 +39,15 @@ $(function(){
 		modal: true,
 		draggable: false,
 		// dialogClass: "no-close",
-		buttons: {
-			"Cancel": function(){
-				$(this).dialog("close");
-			}
+		buttons: [
+		{
+				text: "Cancel",
+				id:"cancelButtons",
+				click: function(){
+					$(this).dialog("close");
+				}
 		}
+		]
 	});
 
 	$("#registerButton")

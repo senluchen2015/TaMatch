@@ -6,6 +6,22 @@ body {
     font-family: sans-serif;
 }
 
+
+#okButtons{
+	background: #55ACEE;
+	color: white;
+}
+
+#cancelButtons{
+	background:gray;
+	color:white;
+}
+
+#favoriteButtons{
+	background: #ffb450;
+	color: white;
+}
+
 .no-close .ui-dialog-titlebar-close {
   display: none;
 }
@@ -125,14 +141,11 @@ body {
 	margin-left:25%;
 	margin-right:25%;
 	margin-top:10%;
-
-	}
-
-#loginForm{
 }
-
-
 
 .newsDetails, .announcementDetails {
 	font-size: 20px;
 }
+
+
+
