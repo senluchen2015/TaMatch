@@ -157,7 +157,6 @@ function loadDetail(name,instructor,time,quarter,commitment,size,details,oddOrEv
 													html= "<div class=coursesHomeEven>" + name +'&nbsp;&nbsp;<img src="images/redx.png" class="btnDelete"</div>'; 
 													$("#openText").append(html);
 													$(".btnDelete").bind("click", Delete);
-													alert("Thank you for applying");
 													$(".ui-dialog-content").dialog("close");
 												}
 
