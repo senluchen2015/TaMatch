@@ -96,7 +96,7 @@ function loadDetail(name,instructor,time,quarter,commitment,size,details,oddOrEv
 				},
 				"Favorite": function(){
 					$(this).dialog("close");
-					html= "<div class=coursesHomeEven>" + name +'&nbsp;&nbsp;<img src="images/delete.png" class="btnDelete"</div>'; 
+					html= "<div class=coursesHomeEven>" + name +'&nbsp;&nbsp;<img src="images/redx.png" class="btnDelete"</div>'; 
 					$("#favoriteText").append(html);
 					$(".btnDelete").bind("click", Delete);
 				},
