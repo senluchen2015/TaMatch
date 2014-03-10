@@ -11,7 +11,7 @@ $(function(){
 		.click(function(){
 				var values = $('#selCourse').val();
 				values.forEach(function(item) {
-					$("#tblData tbody").append("<tr><td>"+item+"&nbsp;&nbsp;<img src='images/delete.png' class='btnDelete'/></td></tr>");
+					$("#tblData tbody").append("<tr><td>"+item+"&nbsp;&nbsp;<img src='images/redx.png' class='btnDelete'/></td></tr>");
 					$(".btnDelete").bind("click", Delete);	
 					console.log(item);
 				})
