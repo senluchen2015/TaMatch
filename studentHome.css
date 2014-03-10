@@ -60,6 +60,11 @@ button{
 
 .favorite{
 	height:50%;
+	background: whitesmoke;
+}
+.openApplication{
+	background: whitesmoke;
+	height: 50%;
 }
 
 
@@ -95,6 +100,10 @@ button{
 .coursesHomeEven{
 	color: #432F21;
 	font-weight: normal;
+}
+
+.coursesHomeEven:hover, .coursesHomeOdd:hover{
+	opacity: .5;
 }
 
 .logOut{	
@@ -158,4 +167,8 @@ color: white;
 text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2);
 border: 1px solid;
 font-size: 100%;
+}
+
+.topText{
+	background:#DFDED4;
 }
