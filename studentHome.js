@@ -90,17 +90,28 @@ function loadDetail(name,instructor,time,quarter,commitment,size,details,oddOrEv
 			modal: true,
 			draggable: false,
 			dialogClass: "no-close",
-			buttons: {
-				"Cancel": function(){
-					$(this).dialog("close");
+			buttons: [
+				{
+					text:"Cancel",
+					id:"cancelButtons",
+					click: function(){
+						$(this).dialog("close");
+					}
 				},
-				"Favorite": function(){
+				{
+					text:"Favorite",
+					id:"favoriteButtons",
+					click: function(){
 					$(this).dialog("close");
 					html= "<div class=coursesHomeEven>" + name +'&nbsp;&nbsp;<img src="images/redx.png" class="btnDelete"</div>'; 
 					$("#favoriteText").append(html);
 					$(".btnDelete").bind("click", Delete);
+					}
 				},
-				"Apply": function(){
+				{ 
+					text:"Apply",
+					id:"okButtons",
+					click: function(){
 					document.getElementById("applicationForm").style.visibility="visible";
 					$(".className").html( name +" Personal Statement")
 					$("#applicationForm").dialog({
@@ -110,11 +121,19 @@ function loadDetail(name,instructor,time,quarter,commitment,size,details,oddOrEv
 							modal: true,
 							draggable: false,
 							dialogClass: "no-close",
-							buttons: {
-								"Cancel": function(){
-									$(this).dialog("close");
+							buttons: [
+								{ 
+									text:"Cancel",
+									id:"cancelButtons",
+									click: function(){
+										$(this).dialog("close");
+									}
 								},
-								"Submit": function(){
+								{
+								
+									text:"Submit",
+									id:"okButtons",
+									click: function(){
 										document.getElementById("confirmForm").style.visibility="visible";								
 									$("#confirmForm").dialog({
 										autoOpen: true,
@@ -123,28 +142,39 @@ function loadDetail(name,instructor,time,quarter,commitment,size,details,oddOrEv
 										modal: true,
 										draggable: false,
 										dialogClass: "no-close",
-										buttons: {	
-											"Cancel": function(){
-												$(this).dialog("close");
+										buttons: [
+											{
+												text: "Cancel",
+												id:"cancelButtons",
+												click: function(){
+													$(this).dialog("close");
+												}
 											},
-											"Submit": function(){
-												html= "<div class=coursesHomeEven>" + name +'&nbsp;&nbsp;<img src="images/redx.png" class="btnDelete"</div>'; 
-												$("#openText").append(html);
-												$(".btnDelete").bind("click", Delete);
-												$(".ui-dialog-content").dialog("close");
+											{	
+												text:"Submit",
+												id:"okButtons",
+												click: function(){
+													html= "<div class=coursesHomeEven>" + name +'&nbsp;&nbsp;<img src="images/redx.png" class="btnDelete"</div>'; 
+													$("#openText").append(html);
+													$(".btnDelete").bind("click", Delete);
+													$(".ui-dialog-content").dialog("close");
+												}
+
 											}					
-										}			
+										]			
 									});
 									$('.ui-widget-overlay').css('background', 'grey');
+									}
 								}
-							}
+
+							]
 					});
 					$('.ui-widget-overlay').css('background', 'grey');
 				}
 			}
+			]
 		});
 	$('.ui-widget-overlay').css('background', 'grey');
-
 	});
 }
 
