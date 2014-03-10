@@ -96,14 +96,14 @@ p.name {
 
 	padding: 10px 15px 11px !important;
 	font-size: 18px !important;
-	background-color: #57d6c7;
+	background-color: #55ACEE;
 	font-weight: bold;
-	text-shadow: 1px 1px #57D6C7;
-	color: #ffffff;
+	text-shadow: 1px 1px #55ACEE;
+	color: white;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	border: 1px solid #57D6C7;
+	border: 1px solid #55ACEE;
 	cursor: pointer;
 	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
@@ -116,14 +116,14 @@ p.name {
 
     padding: 10px 15px 11px !important;
 	font-size: 18px !important;
-	background-color: #ff6961;
+	background-color: gray;
 	font-weight: bold;
-	text-shadow: 1px 1px #ff6961;
-	color: #ffffff;
+	text-shadow: 1px 1px gray;
+	color: white;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	border: 1px solid #ff6961;
+	border: 1px solid gray;
 	cursor: pointer;
 	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
