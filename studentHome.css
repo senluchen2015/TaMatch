@@ -81,6 +81,7 @@ button{
 	background: #CDCAB9;
 	border: 1px solid;
 	visibility: hidden;
+	z-index: 4;
 }
 
 
